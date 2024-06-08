@@ -1,0 +1,201 @@
+:root{
+  --mainColor: #6a00f6;
+  --secondColor: #bf00f6;
+  --btnColor: #fcc62a;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  direction: rtl;
+}
+
+p{
+  margin: 30px 0;
+  line-height: 1.8;
+  color: #555555;
+  font-size: 1.3rem;
+}
+
+h2{
+  color: var(--secondColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  &::before, &::after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: var(--mainColor);
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+/* start navbar */
+.navbar{
+  background-color: var(--mainColor);
+  color: #fff;
+
+  .navbar-brand{
+    color: var(--btnColor);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .nav-link{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    transition: all.3s ease-in-out;
+
+    &:hover{
+      color: var(--btnColor);
+    }
+  }
+}
+/* start main section */
+
+.main{
+  background-color: var(--mainColor);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 65vh;
+
+  h1{
+    font-size: 4rem;
+  }
+
+  p{
+    max-width: 50%;
+    color: #ebebeb;
+  }
+
+  a{
+    text-decoration: none;
+    background-color: var(--btnColor);
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 50px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+    margin: 30px 0 0;
+    display: inline-block;
+    &:hover{
+      background-color: transparent;
+      color: var(--btnColor);
+      border: 1px solid var(--btnColor);
+    }
+  }
+}
+/* start about section */
+.about{
+  .content{
+    h3{
+      font-weight: bold;
+      color: var(--mainColor);
+    }
+    ul{
+      li{
+        margin: 7px 0;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+}
+
+/* start pay section */
+.pay{
+  padding: 60px 0;
+  .card{
+    border: none;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 10px;
+
+    img{
+      height: 200px;
+    }
+
+    p{
+      padding: 0 20px;
+    }
+    h3{
+      font-weight: bold;
+      color: var(--mainColor);
+    }
+
+    a{
+      width: 50%;
+      margin: 20px auto;
+      text-decoration:none ;
+      background-color: var(--mainColor);
+      color: #fff;
+      padding: 10px;
+      border-radius: 15px;
+      font-weight: 700;
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        background-color: var(--secondColor);
+      }
+    }
+  }
+}
+
+/* start FAQs section */
+.faqs{
+  padding: 60px 0;
+
+  .coll{
+    margin: 15px 0;
+    button{
+      display: block;
+      width: 100%;
+      text-align: right;
+      background-color: var(--mainColor);
+      color: #fff;
+      border-radius: 0;
+      padding: 15px 20px;
+      font-size: 1.6rem;
+    }
+
+    .card{
+      border-radius: 0;
+    }
+  }
+}
+
+/* start footer */
+footer{
+  background-color: var(--mainColor);
+  color: #fff;
+
+  h3{
+    color: var(--btnColor);
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  ul{
+    li{
+      .nav-link{
+        transition: all .3s ease-in-out;
+        font-weight: 700;
+        font-size: 1.2rem;
+        &:hover{
+          color: var(--btnColor);
+        }
+      }
+    }
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
+
+}
